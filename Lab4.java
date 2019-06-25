@@ -8,7 +8,8 @@ public class Lab4 {
 		
 		char answer = 'y';
 		
-		//Takes user integer input, uses three for loops to print the lists of numbers, squares and cubes
+		//Takes user integer input, uses a for loop to print the lists of numbers, squares and cubes
+		//Then, it calls the multiplication table method
 		do {
 			
 			System.out.println("Enter an integer:");
@@ -46,12 +47,12 @@ public boolean nearHundred(int n) {
 	    return false;}
 	  }
 
-//multiplication table print method
+//Multiplication table print method
 public static void printTable(int integer) {
 	
 	  System.out.format("      ");
 	   
-       for(int i = 1; i<=integer; i++ ) {
+       for(int i = 1; i <= integer; i++) {
            System.out.format("%4d",i);
        }
        
@@ -61,7 +62,7 @@ public static void printTable(int integer) {
            System.out.format("%4d  ", i);
            
            for(int j = 1;j <= integer;j++) {
-               System.out.format("%4d",i*j);
+               System.out.format("%4d", i * j);
            }
            
            System.out.println();
