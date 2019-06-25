@@ -9,7 +9,7 @@ public class Lab4 {
 		char answer = 'y';
 		
 		//Takes user integer input, uses a for loop to print the lists of numbers, squares and cubes
-		//Then, it calls the multiplication table method
+		//Then, it calls the multiplication table method and checks if the user wants to continue
 		do {
 			
 			System.out.println("Enter an integer:");
@@ -23,8 +23,6 @@ public class Lab4 {
 			for(int i = 1; i <= integer; i++) {
 				System.out.printf("%-10s %-10s %-10s\n", i, i * i, i * i * i);
 			}
-			
-			System.out.println();
 			
 			printTable(integer);
 			
